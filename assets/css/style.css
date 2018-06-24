@@ -1,0 +1,82 @@
+/* ************************************************** */
+/* Class - Coding Bootcamp MW                         */
+/* Assignment #7 - Train Scheduler                    */
+/* Author: Rod Skoglund                               */
+/* Stype Sheet for of Assignment #7                   */
+/* ************************************************** */
+
+/* Style settings for the title/heading of this page. */
+/* Make the font size responsive.                     */
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h5 {
+    font-size: 1.5vw;
+    padding: 3px 3px 0 3px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    /* width: 95% */
+    width: 100%
+}
+
+.title-header {
+    /* height: 20px;  */
+    margin: 10px auto;
+    width: 98%;
+}
+
+.table-header{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+    /* padding: 10px; */
+}
+
+.col-sm-12 {
+    padding: 0px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 95%;
+}
+
+.container-train-info {
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    /* margin: 10px; */
+    margin: 0 auto;
+    /* width: 84% */
+    /* padding: 20px; */
+}
+
+.train-table {
+    border-style: solid;
+    border-width: 2px;
+    margin: 0 auto;
+
+}
