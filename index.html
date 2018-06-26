@@ -24,95 +24,79 @@
     <!-- Add associated stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
   
-
 </head>
 <body>
     <div class="main-container">
-    <div class="container">
+        <div class="container">
 
-        <!-- Jumbotron Title -->
-        <div class="jumbotron title-header">
-            <h1 class="text-center">Train Schedule</h1>
-            <h3 class="text-center">Don't be late</h3>
+            <!-- Jumbotron Title -->
+            <div class="jumbotron title-header">
+                <h1 class="text-center">Train Schedule</h1>
+                <h3 class="text-center">Don't be late!!</h3>
+            </div>
+
         </div>
 
-    </div>
-
-    <div class="container-train-info table-responsive">
-        <div class="table-header">
-            <h5 class="text-left">Current Train Schedule</h5>
+        <div class="container-train-info table-responsive">
+            <div class="table-header">
+                <h5 class="text-left">Current Train Schedule</h5>
+            </div>
+            <table class="table table-striped table-bordered train-table">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody class="train-list">
+                    <!-- Empty list - added as needed dynamically by Javascript -->
+                </tbody>
+            </table>
         </div>
-        <table class="table table-striped table-bordered train-table">
-            <thead>
-                <tr class="table-primary">
-                    <th scope="col">Train Name</th>
-                    <th scope="col">Destination</th>
-                    <th scope="col">Frequency (min)</th>
-                    <th scope="col">Next Arrival</th>
-                    <th scope="col">Minutes Away</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Trenton Express</td>
-                    <td>Trenton</td>
-                    <td>25</td>
-                    <td>05:35 pm</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Olathe Express</td>
-                    <td>Olathe</td>
-                    <td>20</td>
-                    <td>05:00 pm</td>
-                    <td>8</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 
-    <br>
+        <br>
     
-    <!-- Make Your Bid -->
-    <div class="container-train-info table-responsive">
-        <div class="table-header">
-            <h5 class="text-left">Add Train</h5>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card card-default">
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group row">
-                                <label for="train-name">Train Name</label>
-                                <input class="form-control" id="train-name" type="text" required>
-                            </div>
-                            <div class="form-group row">
-                                <label for="destination">Destination</label>
-                                <input class="form-control" id="destination" type="text" required>
-                            </div>  
-                            <div class="form-group row">
-                                <label for="first-train-time">First Train Time (HH:mm - military time)</label>
-                                <input class="form-control" id="first-train-time" type="HH:MM" required>
-                            </div>  
-                            <div class="form-group row">
-                                <label for="frequency">Frequency (min)</label>
-                                <input class="form-control" id="frequency" type="number" required>
-                            </div>  
-                            <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
-                        </form>
-
+        <!-- Add a Train form -->
+        <div class="container-train-info table-responsive">
+            <div class="table-header">
+                <h5 class="text-left">Add Train</h5>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card card-default">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="train-name">Train Name</label>
+                                    <input class="form-control" id="train-name" type="text" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="destination">Destination</label>
+                                    <input class="form-control" id="destination" type="text" required>
+                                </div>  
+                                <div class="form-group row">
+                                    <label for="first-train-time">First Train Time (HH:mm - military time)</label>
+                                    <input class="form-control" id="first-train-time" required>
+                                </div>  
+                                <div class="form-group row">
+                                    <label for="frequency">Frequency (min)</label>
+                                    <input class="form-control" id="frequency" required>
+                                </div>  
+                                <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </div>
     </div>
 
     <br><br>
     
-        <!-- Link to the javascript file for this application.               -->
-        <script src="assets/javascript/app.js"></script>
+    <!-- Link to the javascript file for this application.               -->
+    <script src="assets/javascript/app.js"></script>
 
 </body>

@@ -27,16 +27,15 @@ h5 {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0;
-    /* width: 95% */
-    width: 100%
+    width: 100%;
 }
 
 .title-header {
-    /* height: 20px;  */
     margin: 10px auto;
-    width: 98%;
+    background-color: darkblue;
+    color: aqua;
 }
 
 .table-header{
@@ -49,7 +48,6 @@ h5 {
 
 .row {
     margin: 0;
-    /* padding: 10px; */
 }
 
 .col-sm-12 {
@@ -60,23 +58,15 @@ h5 {
     margin-top: 10px;
 }
 
-.form-control {
-    width: 95%;
-}
-
 .container-train-info {
     border-style: solid;
     border-width: 2px;
     border-color: blue;
-    /* margin: 10px; */
     margin: 0 auto;
-    /* width: 84% */
-    /* padding: 20px; */
 }
 
 .train-table {
     border-style: solid;
     border-width: 2px;
     margin: 0 auto;
-
 }
